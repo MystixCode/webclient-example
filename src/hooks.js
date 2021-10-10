@@ -4,7 +4,7 @@ export async function handle({request, resolve}) {
     const cookies = cookie.parse(request.headers.cookie || '')
 
     //do some stuff before
-    console.log({user:cookies.user})
+    //console.log({user:cookies.user})
     request.locals.user = cookies.user
 
     const response = await resolve(request)

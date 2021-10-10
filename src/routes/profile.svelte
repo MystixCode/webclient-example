@@ -16,7 +16,6 @@
     export let user
 </script>
 
-
 <main>
 
 	<h1>Welcome {user}</h1>

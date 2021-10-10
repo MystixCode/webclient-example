@@ -32,9 +32,9 @@
 	  <a href="/about"><i class="fas fa-building" style="margin-right:8px;"></i>About</a>
       {#if user}
       <a href="/profile"><i class="fas fa-user" style="margin-right:8px;"></i>Profile</a>
-	  <a href="/logout"><i class="fas fa-user" style="margin-right:8px;"></i>Logout</a>
+	  <a href="/auth/logout"><i class="fas fa-user" style="margin-right:8px;"></i>Logout</a>
       {:else}
-      <a href="/login"><i class="fas fa-user" style="margin-right:8px;"></i>Login</a>
+      <a href="/auth/login"><i class="fas fa-user" style="margin-right:8px;"></i>Login</a>
       {/if}
 	</div>
 

@@ -16,9 +16,8 @@
 <script>
 	import Nav from '../components/Nav.svelte';
     export let user;
-    console.log(user)
+    //console.log(user)
 </script>
-
 
 <Nav user={user}/>
 

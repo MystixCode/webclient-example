@@ -1,11 +1,9 @@
-
-import * as authConf from '../authconf.json';  
+import * as authConf from '../../../authconf.json';  
   
 //console.log(authConf);
 
 const loginURL = authConf.loginURL
 const clientID = authConf.clientID
-
 
 export async function get(request) {
     const sessionID = '1234'

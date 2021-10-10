@@ -1,10 +1,9 @@
-import * as authConf from '../authconf.json';  
+import * as authConf from '../../../authconf.json';  
 
 const tokenURL = authConf.tokenURL
 const userURL = authConf.userURL
 const clientID = authConf.clientID
 const clientSecret = authConf.clientSecret
-
 
 export async function get(request) {
 
@@ -28,7 +27,6 @@ export async function get(request) {
     }
 }
 
-
 function getToken(code) {
     return fetch(tokenURL, {
         method: 'POST',
@@ -43,7 +41,6 @@ function getToken(code) {
         })
     }).then(r => r.json())
       .then(r => r.access_token)
-
 }
 
 function getUser(token) {
