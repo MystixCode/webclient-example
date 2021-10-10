@@ -3,4 +3,5 @@ node_modules
 /build
 /.svelte-kit
 /package
-authconf.json
+#authconf.json
+package-lock.json

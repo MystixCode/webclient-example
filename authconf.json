@@ -1,0 +1,7 @@
+{
+    "clientID": "00000000000000000000",
+    "clientSecret": "0000000000000000000000000000000000000000",
+    "loginURL": "https://github.com/login/oauth/authorize",
+    "tokenURL": "https://github.com/login/oauth/access_token",
+    "userURL": "https://api.github.com/user"
+}
