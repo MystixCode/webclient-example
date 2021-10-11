@@ -72,9 +72,17 @@ main {
 }
 
 .box {
-	background-color: #424242;
+	background-color: #303030;
 	padding:8px;
 	text-align: left;
 	max-width:1080px;
 	margin: 0 auto;
+}
+
+.box2 {
+	background-color: #424242;
+	padding:8px;
+	text-align: left;
+	max-width:1080px;
+	margin: 10px auto;
 }

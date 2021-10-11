@@ -27,28 +27,20 @@ export let data;
 
     <h1>Tests</h1>
 
-    <form action="/api/tests" method="POST">
-        <label for="">
-            Name:
-            <input type="text" name="name">
-        </label>
-        <label for="">
-            Description:
-            <input type="text" name="description">
-        </label>
-        <input type="submit">
+    <h2>Add test items</h2>
+    <form class="box" action="/api/tests" method="POST">
+        <input type="text" name="name" placeholder="Name">
+        <input type="text" name="description" placeholder="Description">
+        <input type="submit" value="Add new test item">
     </form>
 
-    {JSON.stringify(data)}
-
+    <!--  {JSON.stringify(data)}  -->
+    <h2>Test items list</h2>
     {#each data.data.data as test}
-        <p>{test.name} | {test.description}</p>
+        <div class="box2">
+            <span>Name: {test.name} </span><br>
+            <span>Description: {test.description}</span>
+        </div>
     {/each}
 
 </main>
-
-<style>
-    label {
-        display:block;
-    }
-</style>
