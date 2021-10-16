@@ -17,17 +17,12 @@ export async function get(request) {
 }
 
 export async function post(request) {
-    const name = request.body.get("name")
-    const description = request.body.get("description")
     const r = await fetch(url, {
         method: "POST",
         headers: {
             Accept: 'application/json',
         },
-        body: JSON.stringify({
-            name,
-            description
-        })
+        body: request.body
     });
 
     const data = await r.json();

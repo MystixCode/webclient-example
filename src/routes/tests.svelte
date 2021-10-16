@@ -20,7 +20,23 @@ export async function load({fetch}) {
 </script>
 
 <script>
+
 export let data;
+
+let name;
+let description;
+//$: console.log(name, description);
+
+async function handleSubmit() {
+    const submit = await fetch("/api/tests", {
+        method: "POST",
+        body: JSON.stringify({
+            name,
+            description,
+        })
+    })
+}
+
 </script>
 
 <main>
@@ -28,10 +44,12 @@ export let data;
     <h1>Tests</h1>
 
     <h2>Add test items</h2>
-    <form class="box" action="/api/tests" method="POST">
-        <input type="text" name="name" placeholder="Name">
-        <input type="text" name="description" placeholder="Description">
-        <input type="submit" value="Add new test item">
+    
+
+    <form class="box" on:submit|preventDefault={handleSubmit}>
+        <input type="text" placeholder="Name" bind:value={name} />
+        <input type="text" placeholder="Description" bind:value={description} />
+        <input type="submit" />
     </form>
 
     <!--  {JSON.stringify(data)}  -->

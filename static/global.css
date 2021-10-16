@@ -51,7 +51,7 @@ textarea{
 	box-sizing: border-box;
 }
 
-  button {
+  button, input[type=submit]  {
     background-color: #600080;
     color: white;
     padding: 14px 20px;
@@ -61,7 +61,7 @@ textarea{
     width: 100%;
   }
 
-  button:hover {
+  button:hover, input[type=submit]:hover {
     opacity: 0.8;
   }
 
